@@ -1,0 +1,123 @@
+.body-chat {
+  height: 400px;
+  border: 1px solid #725007;
+  border-radius: 1rem;
+}
+
+.container-chat {
+  margin: auto;
+  margin-top: 5%;
+  width: 70%;
+}
+
+.container-chat input {
+  margin-top: 1%;
+  width: 77%;
+  height: 30px;
+  border: 1px solid #4f3909;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.container-chat button {
+  margin-top: 1%;
+  width: 22%;
+  height: 34px;
+  border: 1px solid #4f3909;
+  font-weight: bold;
+  color: #4f3909;
+  background-color: #4f39094d;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.container-chat button:hover {
+  cursor: pointer;
+}
+
+#you {
+  background-color: rgb(0, 128, 0, 0.17);
+  margin-left: 58%;
+  width: 40%;
+  height: 50px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+#other {
+  background-color: rgb(0, 0, 255, 0.17);
+  justify-content: flex-start;
+  margin-right: 49%;
+  margin-left: 1%;
+  width: 40%;
+  height: 50px;
+  flex-direction: column;
+}
+
+.message-container {
+  display: flex;
+  border-radius: 1rem;
+  padding-left: 1%;
+  padding-top: 1%;
+  margin-bottom: 5%;
+}
+
+.scroll-container {
+  width: 99.2%;
+  height: 100%;
+  border-top-right-radius: 1rem;
+}
+
+.author-message {
+  font-size: 12px;
+  margin: auto;
+}
+
+.text-message {
+  color: #4f3909d5;
+  margin-left: 5%;
+}
+
+.time-message {
+  font-size: 12px;
+  position: relative;
+  top: -50%;
+}
+
+.header-chat {
+  margin-top: 1%;
+}
+
+.header-chat h3 {
+  color: #4f3909d5;
+  margin: auto;
+  text-align: center;
+}
+
+@media only screen and (max-width: 414px) {
+  .body-chat {
+    width: 320px;
+    height: 70vh;
+    margin-left: -20px;
+  }
+
+  .container-chat {
+    margin-top: 7%;
+  }
+
+  .container-chat input {
+    margin-top: 1%;
+    width: 110%;
+    height: 30px;
+    border: 1px solid #4f3909;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+
+  .container-chat button {
+    border-radius: 0.5rem;
+    width: 40%;
+    position: relative;
+    left: 36%;
+  }
+}
