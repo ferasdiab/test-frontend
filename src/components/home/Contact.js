@@ -68,6 +68,7 @@ export default function Contact() {
             },
           }
         );
+        // eslint-disable-next-line
         if (response.status == 200) {
           if (response.data === "error") {
             setAllMessages([]);
@@ -82,6 +83,7 @@ export default function Contact() {
     if (token) {
       getMessages();
     }
+    // eslint-disable-next-line
   }, [token]);
 
   return (
@@ -100,6 +102,7 @@ export default function Contact() {
                 <div
                   key={index}
                   className="message-container"
+                  // eslint-disable-next-line
                   id={elem.author == user_name ? "you" : "other"}
                 >
                   <p className="author-message">{elem.author}</p>

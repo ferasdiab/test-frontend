@@ -62,7 +62,7 @@ export default function Login() {
   return (
     <div>
       <div className="login-form">
-        <img className="logo-login" src={logoBank} />
+        <img className="logo-login" alt="logoBank" src={logoBank} />
         <label htmlFor="">Email:</label>
         <input
           className="login-input"

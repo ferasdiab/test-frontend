@@ -31,7 +31,7 @@ export default function Chat() {
       socket.emit("send_message", messageData);
       setAllMessages([...allMessages, messageData]);
       setMessage("");
-
+      // eslint-disable-next-line
       const response = await axios.post(
         `${process.env.REACT_APP_URL}/send-message-admin-chat`,
         {
@@ -69,6 +69,7 @@ export default function Chat() {
           },
         }
       );
+      // eslint-disable-next-line
       if (response.status == 200) {
         if (response.data === "error") {
           setAllMessages([]);
@@ -81,6 +82,7 @@ export default function Chat() {
     if (token) {
       getMessages();
     }
+    // eslint-disable-next-line
   }, [token]);
 
   return (
@@ -96,6 +98,7 @@ export default function Chat() {
                 <div
                   key={index}
                   className="message-container"
+                  // eslint-disable-next-line
                   id={elem.author == user_name ? "you" : "other"}
                 >
                   <p className="author-message">{elem.author}</p>

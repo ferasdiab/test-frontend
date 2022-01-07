@@ -16,24 +16,28 @@ export default function AdminPage() {
 
   const changeToggle = (n) => {
     setToggle(n);
+    // eslint-disable-next-line
     if (n == 1) {
       setDashActive(true);
       setAddMoneyActive(false);
       setCardsActive(false);
       setUsersActive(false);
       setAllChatsActive(false);
+      // eslint-disable-next-line
     } else if (n == 2) {
       setDashActive(false);
       setAddMoneyActive(true);
       setCardsActive(false);
       setUsersActive(false);
       setAllChatsActive(false);
+      // eslint-disable-next-line
     } else if (n == 3) {
       setDashActive(false);
       setAddMoneyActive(false);
       setCardsActive(true);
       setUsersActive(false);
       setAllChatsActive(false);
+      // eslint-disable-next-line
     } else if (n == 4) {
       setDashActive(false);
       setAddMoneyActive(false);
@@ -95,6 +99,7 @@ export default function AdminPage() {
       </div>
 
       <div className="right-side-admin">
+        {/* eslint-disable-next-line */}
         {toggle == 1 ? (
           <div>
             <h3 className="header-dashbord">7 Days ago:</h3>
@@ -103,9 +108,13 @@ export default function AdminPage() {
         ) : (
           ""
         )}
+        {/* eslint-disable-next-line */}
         {toggle == 2 && <AddMoney />}
+        {/* eslint-disable-next-line */}
         {toggle == 3 && <Cards />}
+        {/* eslint-disable-next-line */}
         {toggle == 4 && <Users />}
+        {/* eslint-disable-next-line */}
         {toggle == 5 && <AllChats />}
       </div>
     </div>

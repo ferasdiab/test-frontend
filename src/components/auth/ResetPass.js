@@ -21,7 +21,9 @@ export default function ResetPass() {
           email,
         }
       );
+      // eslint-disable-next-line
       if (response.status == 200) {
+        // eslint-disable-next-line
         const sendCode = await axios.post(`${process.env.REACT_APP_URL}/msg`, {
           email,
         });
@@ -43,16 +45,17 @@ export default function ResetPass() {
         code,
       }
     );
+    // eslint-disable-next-line
     if (response.status == 200) {
       setPassToggle(!passToggle);
       setCode("");
     }
   };
-
+  // eslint-disable-next-line
   const saveFirstPass = (e) => {
     setFirstPass(e.target.value);
   };
-
+  // eslint-disable-next-line
   const saveSecondPass = (e) => {
     setSecondPass(e.target.value);
   };
@@ -60,12 +63,14 @@ export default function ResetPass() {
   const resetPass = async () => {
     console.log(firstPass, "firstPass");
     console.log(secondPass, "secondPass");
+    // eslint-disable-next-line
     if (firstPass == secondPass) {
       const response = await axios.put(`${process.env.REACT_APP_URL}/re-pass`, {
         password: firstPass,
         email: email,
       });
       console.log(response, "response");
+      // eslint-disable-next-line
       if (response.status == 200) {
         setErrorMessage("");
         history.push("/login");

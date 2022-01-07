@@ -20,6 +20,7 @@ export default function AllChats() {
           },
         }
       );
+      // eslint-disable-next-line
       if (response.status == 200) {
         setChats(response.data);
       }

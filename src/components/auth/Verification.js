@@ -27,6 +27,7 @@ export default function Verification(props) {
         }
       );
       console.log(response.data, "response");
+      // eslint-disable-next-line
       if (response.status == 200) {
         const createAccount = await axios.post(
           `${process.env.REACT_APP_URL}/signup`,
@@ -40,6 +41,7 @@ export default function Verification(props) {
             nationality,
           }
         );
+        // eslint-disable-next-line
         if (createAccount.status == 201) {
           history.push("/login");
         }

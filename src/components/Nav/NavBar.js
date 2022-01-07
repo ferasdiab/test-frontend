@@ -28,13 +28,14 @@ export default function NavBar() {
             setChecked(!checked);
           }}
         >
-          <img src={menue} />
+          <img src={menue} alt="menu" />
         </label>
       </div>
 
       {token ? (
         <Link to="/home" className="navbar-link">
           <img
+          alt="fbk"
             className="logo-nav navbar-link"
             title="Alfaiadh"
             onClick={() => {
@@ -46,6 +47,7 @@ export default function NavBar() {
       ) : (
         <Link to="/" className="navbar-link">
           <img
+          alt="gb"
             className="logo-nav"
             title="Alfaiadh"
             onClick={() => {

@@ -29,10 +29,11 @@ require("dotenv").config();
 function App() {
   let token = useSelector((state) => state.token.token);
   const isAdmin = useSelector((state) => state.token.user_admin);
+  //eslint-disable-next-line
   const idUser = useSelector((state) => state.token.user_id);
   const dispatch = useDispatch();
   const history = useHistory();
-
+  //eslint-disable-next-line
   useEffect(async () => {
     if (!token && localStorage.getItem("token") !== "") {
       dispatch(
@@ -45,6 +46,7 @@ function App() {
       );
     }
     try {
+      //eslint-disable-next-line
       const response = await axios.get(`${process.env.REACT_APP_URL}/login`, {
         headers: {
           authorization: `Bearer ${token}`,
@@ -64,6 +66,7 @@ function App() {
 
       console.log(error.response.data, "error");
     }
+    //eslint-disable-next-line
   }, [token]);
 
   return (

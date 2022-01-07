@@ -32,6 +32,7 @@ export default function Dashboard() {
         });
         for (let i = 1; i < a.length; i++) {
           if (
+            // eslint-disable-next-line
             a[i].date.substr(0, 10) == data[data.length - 1].date.substr(0.1)
           ) {
             data[data.length - 1].transaction.push({
@@ -52,6 +53,7 @@ export default function Dashboard() {
     };
 
     getData();
+    // eslint-disable-next-line
   }, []);
 
   return (

@@ -35,6 +35,7 @@ export default function TransferMoney() {
 
   const findIbanBySearch = () => {
     const result = ibanCards.filter((elem, index) => {
+      // eslint-disable-next-line
       return elem.ibanNumber == ibanNumber;
     });
     setResultSearch(result);

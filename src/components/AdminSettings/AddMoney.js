@@ -33,7 +33,7 @@ export default function AddMoney() {
           },
         }
       );
-
+      //eslint-disable-next-line
       if (response.status == 201) {
         alert("sucessfully");
         history.push("/home");

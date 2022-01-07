@@ -7,7 +7,7 @@ export default function OneHistoryPayment() {
   const [historyUser, setHistoryUser] = useState([]);
   const { id } = useParams();
   const token = useSelector((state) => state.token.token);
-
+  // eslint-disable-next-line
   useEffect(() => {
     const getHistoryData = async () => {
       const response = await axios.get(
@@ -25,6 +25,7 @@ export default function OneHistoryPayment() {
     if (token) {
       getHistoryData();
     }
+    // eslint-disable-next-line
   }, [token]);
 
   return (

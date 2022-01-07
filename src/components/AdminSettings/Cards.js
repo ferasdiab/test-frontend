@@ -16,6 +16,7 @@ export default function Cards() {
             authorization: `Bearer ${token}`,
           },
         });
+        // eslint-disable-next-line
         if (response.status == 200) {
           setCards(response.data);
           let cardsArray = response.data;

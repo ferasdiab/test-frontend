@@ -57,6 +57,7 @@ export default function AboutUs() {
         <hr className="hr-about" />
         <div className="google-map">
           {toggle ? (
+            // eslint-disable-next-line
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27368.868341114012!2d41.01730140345901!3d30.967453025000342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x156c0dc453c5529b%3A0x857f510db855784c!2sAl%20Rajhi%20Bank!5e0!3m2!1sen!2ssa!4v1641045502895!5m2!1sen!2ssa"
               width="600"

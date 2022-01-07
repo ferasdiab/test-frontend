@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// eslint-disable-next-line
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import "../../styles/Signup.css";
 import axios from "axios";
@@ -84,7 +85,7 @@ export default function Signup() {
         </div>
       ) : (
         <div className="login-form">
-          <img className="logo-login" src={logoBank} />
+          <img className="logo-login" alt="logoBank" src={logoBank} />
           <label>Email:</label>
           <input
             className="login-input"
